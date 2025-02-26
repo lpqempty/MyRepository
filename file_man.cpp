@@ -46,7 +46,7 @@ bool sorting(const TS& name1, const TS& name2) {
 int main()
 {
     setlocale(LC_ALL, "Russian");
-    cout << "Введите размерность вектора ТС " << endl;
+    cout << "Введите размерность вектора c ТС " << endl;
     int a;
     cin >> a;
     vector<TS> sredstvo;
