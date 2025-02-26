@@ -1,3 +1,6 @@
+/* Задание: создать класс "транспортное средство" в котором хранится информация о нескольких ТС:
+название ТС, тип двигателя и номер двигателя. Создать вектор от класса ТС, вывести его содержимое на экран, 
+все ТС с названием "Man" переписать в новый вектор*/
 #include "iostream"
 #include "string"
 #include "vector"
@@ -62,7 +65,7 @@ int main()
     display(sredstvo);
     vector<TS> sredstvo_man;
     copy_if(sredstvo.begin(), sredstvo.end(), back_inserter(sredstvo_man), [](const TS& otbor) {
-        return otbor.get_name() == "man";
+        return otbor.get_name() == "Man";
         });
     if (!sredstvo_man.empty()) {
         cout << "Новый вектор с ТС <man>\n";
