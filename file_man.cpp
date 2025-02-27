@@ -15,20 +15,20 @@ private:
     string engine_name;
     int engine_num;
 public:
-    TS(string name1, string engine_name1, int engine_num1) {
-        name = name1;
-        engine_name = engine_name1;
-        engine_num = engine_num1;
+    TS(string name, string engine_name, int engine_num) {
+        this -> name = name;
+        this -> engine_name = engine_name;
+        this -> engine_num = engine_num;
     }
 
     string get_name() const {
-        return name;
+        return this -> name;
     }
     string get_engine_name() const {
-        return engine_name;
+        return this -> engine_name;
     }
     int get_engine_num() const {
-        return engine_num;
+        return this -> engine_num;
     }
 };
 
